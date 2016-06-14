@@ -220,13 +220,13 @@ void RTFGenerator::beginRTFDocument()
 
   DBG_RTF(t << "{\\comment Beginning font list}\n")
     t << "{\\fonttbl ";
-  t << "{\\f0\\froman\\fcharset" << theTranslator->trRTFCharSet();
-  t << "\\fprq2{\\*\\panose 02020603050405020304}Times New Roman;}\n";
-  t << "{\\f1\\fswiss\\fcharset" << theTranslator->trRTFCharSet();
+ /* t << "{\\f0\\froman\\fcharset" << theTranslator->trRTFCharSet();
+  t << "\\fprq2{\\*\\panose 02020603050405020304}Times New Roman;}\n";*/
+  t << "{\\f0\\fswiss\\fcharset" << theTranslator->trRTFCharSet();
   t << "\\fprq2{\\*\\panose 020b0604020202020204}Arial;}\n";
-  t << "{\\f2\\fmodern\\fcharset" << theTranslator->trRTFCharSet();
+  t << "{\\f1\\fmodern\\fcharset" << theTranslator->trRTFCharSet();
   t << "\\fprq1{\\*\\panose 02070309020205020404}Courier New;}\n";
-  t << "{\\f3\\froman\\fcharset2\\fprq2{\\*\\panose 05050102010706020507}Symbol;}\n";
+ /*t << "{\\f3\\froman\\fcharset2\\fprq2{\\*\\panose 05050102010706020507}Symbol;}\n";*/
   t << "}\n";
   DBG_RTF(t << "{\\comment begin colors}\n")
     t << "{\\colortbl;";
